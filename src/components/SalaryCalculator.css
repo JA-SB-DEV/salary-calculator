@@ -1,0 +1,239 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.explanation-button {
+  margin-left: 10px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.explanation-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.explanation-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.explanation {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.presupuesto {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.presupuesto-verde {
+  color: green;
+}
+
+.presupuesto-amarillo {
+  color: orange;
+}
+
+.presupuesto-rojo {
+  color: red;
+}
+
+input, select, button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.add-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mensaje {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.mensaje-rojo {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.tipo-ocasional-container,
+.cualificacion-container,
+.grupo-colciencias-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info-button {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.info-button:hover {
+  background-color: #0056b3;
+}
+
+.valores-tipo-ocasional,
+.valores-cualificacion,
+.valores-grupo-colciencias {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+}
+
+.valores-tipo-ocasional h3,
+.valores-cualificacion h3,
+.valores-grupo-colciencias h3 {
+  margin-top: 0;
+}
+
+.valores-tipo-ocasional ul,
+.valores-cualificacion ul,
+.valores-grupo-colciencias ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.valores-tipo-ocasional li,
+.valores-cualificacion li,
+.valores-grupo-colciencias li {
+  margin: 5px 0;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.historial {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.historial table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.historial th, .historial td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.historial th {
+  background-color: #f2f2f2;
+  color: #333;
+}
