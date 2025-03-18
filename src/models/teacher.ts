@@ -21,6 +21,7 @@ class Teacher {
     calcularSalario(): number {
         let salarioTotal = this.salarioBase;
 
+        // Factor por tipo de docente ocasional
         switch (this.tipoOcasional) {
             case 'Auxiliar de tiempo completo':
                 salarioTotal = SALARIO_MINIMO_BASE * 2.645;
@@ -50,6 +51,7 @@ class Teacher {
                 break;
         }
 
+        // Porcentaje adicional por cualificación
         switch (this.cualificacion) {
             case 'Especialización':
                 salarioTotal += this.salarioBase * 0.10;
@@ -63,6 +65,7 @@ class Teacher {
             // Postdoctorado: Exento del cálculo por el momento
         }
 
+        // Porcentaje adicional por grupo Colciencias
         switch (this.grupoColciencias) {
             case 'Grupo A1':
                 salarioTotal += this.salarioBase * 0.56;

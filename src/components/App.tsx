@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Teacher from '../models/teacher';
 import { calculateSalary } from '../services/salaryCalculator';
 import { addTeacher, getTeachers, deleteTeacher } from '../data/teachersData';
+import SalaryChart from './SalaryChart';
 import './App.css';
 
 interface AppProps {
@@ -170,6 +171,9 @@ const App: React.FC<AppProps> = ({ presupuesto, setPresupuesto, presupuestoResta
     return 'presupuesto-rojo';
   };
 
+  const labels = teachers.map(teacher => teacher.nombre);
+  const data = teachers.map(teacher => calculateSalary(teacher));
+
   if (presupuesto === null) {
     return (
       <div className="container">
@@ -306,6 +310,7 @@ const App: React.FC<AppProps> = ({ presupuesto, setPresupuesto, presupuestoResta
           </div>
         )}
         {mensaje && <div className={`mensaje ${notificationClass}`}>{mensaje}</div>}
+        <SalaryChart labels={labels} data={data} />
       </div>
     </div>
   );

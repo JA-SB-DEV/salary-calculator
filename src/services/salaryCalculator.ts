@@ -12,6 +12,7 @@ export interface Teacher {
 export function calculateSalary(teacher: Teacher): number {
     let totalSalary = SALARIO_MINIMO_BASE;
 
+    // Factor por tipo de docente ocasional
     switch (teacher.tipoOcasional) {
         case 'Auxiliar de tiempo completo':
             totalSalary = SALARIO_MINIMO_BASE * 2.645;
@@ -41,6 +42,7 @@ export function calculateSalary(teacher: Teacher): number {
             break;
     }
 
+    // Porcentaje adicional por cualificación
     switch (teacher.cualificacion) {
         case 'Especialización':
             totalSalary += SALARIO_MINIMO_BASE * 0.10;
@@ -54,6 +56,7 @@ export function calculateSalary(teacher: Teacher): number {
         // Postdoctorado: Exento del cálculo por el momento
     }
 
+    // Porcentaje adicional por grupo Colciencias
     switch (teacher.grupoColciencias) {
         case 'Grupo A1':
             totalSalary += SALARIO_MINIMO_BASE * 0.56;
