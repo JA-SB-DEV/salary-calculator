@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
@@ -86,7 +86,9 @@ h1 {
   color: red;
 }
 
-input, select, button {
+input,
+select,
+button {
   display: block;
   width: 100%;
   padding: 10px;
@@ -227,7 +229,8 @@ li {
   border-collapse: collapse;
 }
 
-.historial th, .historial td {
+.historial th,
+.historial td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;

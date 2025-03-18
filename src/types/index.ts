@@ -1,1 +1,1 @@
-export type TeacherType = 'ocasional' | 'catedrático';
+export type TeacherType = "ocasional" | "catedrático";
